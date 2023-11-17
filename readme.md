@@ -12,7 +12,7 @@ Description=Echo TCP/IP application
 
 [Service]
 Environment="PYTHONPATH=/root/pylib"
-ExecStart=/root/echotcp/venv/bin/python server.py
+ExecStart=/usr/local/bin/python3.12 server.py
 WorkingDirectory=/root/echotcp
 Restart=always
 User=root
