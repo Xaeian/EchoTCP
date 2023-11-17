@@ -8,7 +8,7 @@ nano /etc/systemd/system/echotcp.service
 
 ```ini
 [Unit]
-Description=Echo TCP/IP application
+Description=Echo TCP/IP test application
 
 [Service]
 Environment="PYTHONPATH=/root/pylib"

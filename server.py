@@ -10,7 +10,7 @@ else: IP = requests.get("https://ifconfig.me/ip").text.strip()
 PORT = 7357
 BUFF = 2**14
 
-log = logger(f"{PATH}/tcpecho.log")
+log = logger(f"{PATH}/echotcp.log")
 
 async def loop(reader:asyncio.StreamReader, writer:asyncio.StreamWriter):
   request = await reader.read(BUFF)
